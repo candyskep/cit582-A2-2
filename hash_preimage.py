@@ -1,10 +1,3 @@
-'''“hash_preimage” that takes a single input, target_string, where target_string is a string of bits. 
-The function “hash_preimage” should return a single variable x such that the trailing bits of SHA256(x) 
-matches the target string (not the hash of the target string).
-
-Your algorithm should be randomized, i.e., hash_preimage(target_string) should not always return the same partial 
-preimage.'''
-
 import hashlib
 import os
 
