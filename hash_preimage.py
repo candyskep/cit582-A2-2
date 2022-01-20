@@ -6,7 +6,7 @@ def hash_preimage(target_string):
         print( "Input should be a string of bits" )
         return
     while(1):
-        x = os.urandom(1)
+        x = os.urandom(20)
         hex_x = hashlib.sha256(x).hexdigest()
         bin_x = bin(int('1' + hex_x, 16))[3:]
         strlen=len(target_string)
